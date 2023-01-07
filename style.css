@@ -38,9 +38,6 @@ section{
 .prato{
       margin-top: 123px;
 }
-.pratos{
-   
-}
 .bebida .sobremesa{
     margin-top: 27px;
 }
@@ -57,9 +54,13 @@ section h3{
 }
 .pratos{
     display: flex;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: transparent;
 }
 .pratos div{
-
+scroll-snap-align: start;
 width: 172px;
 height: 216px;
 border-radius: 9px ;
@@ -70,6 +71,7 @@ background-color: aquamarine;
 div img{
     margin-top: 18px;
     margin-left: 15px;
+    margin-right: 14px;
 }
 div .nome{
     color: #333333;
@@ -127,5 +129,4 @@ button p{
     margin-left: 25px;   
     padding:  Center;
     margin-right: 25px;
-    border:solid;
 }

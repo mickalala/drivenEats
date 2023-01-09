@@ -17,20 +17,20 @@
     <section class="prato">
         <h3>Primeiro, seu prato</h3>
         <div class="pratos1">
-        <div class="um" onclick="pratoselecionado('.um')">
+        <div class="um" onclick="pratoselecionado('.um')" data-test="dish">
             <img src="./projeto__driven-eats__imagens/frango_yin_yang.png">
             <p class="nome">Frango yin yang</p>
             <p class="descriçao">Um pouco de batata, um pouco de salada</p>
             <p class="preço">R$ 14,90<img  class="verificado4 escondido" src="./projeto__driven-eats__imagens/Vector.png"></p>
            
         </div>
-        <div class="dois" onclick="pratoselecionado('.dois')">
+        <div class="dois" onclick="pratoselecionado('.dois')"data-test="dish">
             <img src="./projeto__driven-eats__imagens/frango_yin_yang.png">
             <p class="nome">Frango yin yang</p>
             <p class="descriçao">Um pouco de batata, um pouco de salada</p>
             <p class="preço">R$ 14,90<img class="verificado5 escondido" src="./projeto__driven-eats__imagens/Vector.png"></p>
         </div>
-        <div class="tres" onclick="pratoselecionado('.tres')">
+        <div class="tres" onclick="pratoselecionado('.tres')"data-test="dish">
             <img src="./projeto__driven-eats__imagens/frango_yin_yang.png">
             <p class="nome">Frango yin yang</p>
             <p class="descriçao">Um pouco de batata, um pouco de salada</p>
@@ -41,19 +41,19 @@
     <section class="bebida">
         <h3>Agora, sua bebida</h3>
         <div class="pratos2">
-            <div class="umbe" onclick="bebidaselecionado('.umbe')">
+            <div class="umbe" onclick="bebidaselecionado('.umbe')"data-test="drink">
                 <img src="./projeto__driven-eats__imagens/coca-cola.png">
                 <p class="nome">Coquinha gelada</p>
                 <p class="descriçao">Lata 350ml</p>
                 <p class="preço">R$ 4,90 <img class="verificado7 escondido" src="./projeto__driven-eats__imagens/Vector.png"></p>
             </div>
-            <div class="doisbe" onclick="bebidaselecionado('.doisbe')">
+            <div class="doisbe" onclick="bebidaselecionado('.doisbe')"data-test="drink">
                 <img src="./projeto__driven-eats__imagens/coca-cola.png">
                 <p class="nome">Coquinha gelada</p>
                 <p class="descriçao">Lata 350ml</p>
                 <p class="preço">R$ 4,90<img class="verificado8 escondido" src="./projeto__driven-eats__imagens/Vector.png"></p>
             </div>
-            <div class="tresbe" onclick="bebidaselecionado('.tresbe')">
+            <div class="tresbe" onclick="bebidaselecionado('.tresbe')"data-test="drink">
                 <img src="./projeto__driven-eats__imagens/coca-cola.png">
                 <p class="nome">Coquinha gelada</p>
                 <p class="descriçao">Lata 350ml</p>
@@ -64,19 +64,19 @@
     <section class="sobremesa">
         <h3>Por fim, sua  sobremesa</h3>
         <div class="pratos3">
-            <div class="umso" onclick="sobremesaselecionado('.umso')">
+            <div class="umso" onclick="sobremesaselecionado('.umso')"data-test="dessert">
                 <img src="./projeto__driven-eats__imagens/pudim.png">
                 <p class="nome">Pudim</p>
                 <p class="descriçao">Apenas pudim</p>
                 <p class="preço">R$ 7,90<img class="verificado1 escondido"src="./projeto__driven-eats__imagens/Vector.png"></p>
             </div>
-            <div class="doisso" onclick="sobremesaselecionado('.doisso')"onclick="vetor('.verificado2')">
+            <div class="doisso" onclick="sobremesaselecionado('.doisso')"onclick="vetor('.verificado2')"data-test="dessert">
                 <img src="./projeto__driven-eats__imagens/pudim.png">
                 <p class="nome">Pudim</p>
                 <p class="descriçao">Apenas pudim</p>
                 <p class="preço">R$ 7,90<img class="verificado2 escondido" src="./projeto__driven-eats__imagens/Vector.png"></p>
             </div>
-            <div class="tresso" onclick="sobremesaselecionado('.tresso')"onclick="vetor('.verificado3')">
+            <div class="tresso" onclick="sobremesaselecionado('.tresso')"onclick="vetor('.verificado3')"data-test="dessert">
                 <img src="./projeto__driven-eats__imagens/pudim.png">
                 <p class="nome">Pudim</p>
                 <p class="descriçao">Apenas pudim</p>
@@ -85,11 +85,11 @@
             </div>
     </section>
     <footer >
-     <button disabled class="semselecionar" >
+     <button disabled class="semselecionar" data-test="order-btn">
         <p >Selecione os 3 itens
         para fechar o pedido</p>
     </button>
-    <button  class="fechar finalizar" onclick="wpp()">
+    <button  class="fechar finalizar" onclick="wpp()" data-test="order-btn">
         <p >Fechar pedido</p>
     </button>
     </footer>

@@ -31,10 +31,6 @@ header h2{
     margin-left: 21px;
     margin-top: 5px;
 }
-
-section{
-     margin-left: 19px;
-}
 .prato{
       margin-top: 123px;
 }
@@ -42,7 +38,7 @@ section{
     margin-top: 27px;
 }
 section h3{
-  
+   margin-left: 19px;
    font-family: 'Righteous';
    font-style: normal;
    font-weight: 400;
@@ -52,14 +48,48 @@ section h3{
    
    color: #333333;
 }
-.pratos{
+.pratos1 {
     display: flex;
     box-sizing: border-box;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-color: transparent;
 }
-.pratos div{
+.pratos1  div{
+scroll-snap-align: start;
+width: 172px;
+height: 216px;
+border-radius: 9px ;
+margin-top: 17px;
+margin-left: 16px;
+background-color: aquamarine;
+
+}
+.pratos2{
+    display: flex;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: transparent;
+}
+.pratos2 div{
+scroll-snap-align: start;
+width: 172px;
+height: 216px;
+border-radius: 9px ;
+margin-top: 17px;
+margin-left: 16px;
+background-color: aquamarine;
+
+}
+.pratos3 {
+    display: flex;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: transparent;
+}
+.pratos3  div{
 scroll-snap-align: start;
 width: 172px;
 height: 216px;
@@ -132,10 +162,11 @@ button p{
 .selecionado{
     border : solid #32B72F 3px;
 }
-.verificado1 {
-    width: 15.44;
+.verificado{
+    width: 15.44px;
     position: relative;
-    left: 55px
+    left: 54px;
+    top:1px;
 }
 .pratos::-webkit-scrollbar{
     display: none;
